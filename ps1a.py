@@ -21,10 +21,10 @@ current_savings = float(0.00)
 #initialize number of months variable
 months = int(0)
 
-# Set up an if loop to do the calculations
-if down_payment>current_savings:
+# Set up a while loop to do the calculations
+while current_savings<down_payment:
     current_savings = current_savings + (portion_saved*monthly_salary) + (current_savings*(r/12))
     months = months + 1
 
-else:
-    print("Number of months: ", months)
+
+print("Number of months: ", months)
